@@ -7,7 +7,7 @@
 
 <body>
 	<script>
-		const numeros = ["7", "4", "10", "1", "5"];
+		const numeros = [100, 56, 1245, 3, 89, 9];
 
 		console.log(numeros.length);
 		console.log(numeros); 
@@ -15,15 +15,19 @@
 		const primero = numeros[0];
 		
 		const ultimo = numeros[numeros.length-1]; 
-			
+					
 		for( let i = 0; i < numeros.length; i++){
 			console.log('tenemos ' + numeros [i])
 		}
 		
-		let a = 10
-		let b = 1
-		let mayor = a > b ? a : b;
-		console.log(mayor)
+		let mayor = 1245
+		for (let i = 0; i <numeros.length; i++){
+			if (numeros[i] > mayor)
+			mayor = numeros
+			console.log(`El mayor de ${numeros} es ${mayor}`)
+		}
+		
+	
 	</script>
 
 </body>
